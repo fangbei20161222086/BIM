@@ -1,0 +1,4 @@
+C:\Users\lenovo\Desktop\ds-C#作业\计算BIM\计算BIM\bin\Debug\计算BIM.exe
+C:\Users\lenovo\Desktop\ds-C#作业\计算BIM\计算BIM\bin\Debug\计算BIM.pdb
+C:\Users\lenovo\Desktop\ds-C#作业\计算BIM\计算BIM\obj\x86\Debug\计算BIM.exe
+C:\Users\lenovo\Desktop\ds-C#作业\计算BIM\计算BIM\obj\x86\Debug\计算BIM.pdb
