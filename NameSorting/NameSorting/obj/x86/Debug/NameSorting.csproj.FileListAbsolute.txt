@@ -1,0 +1,4 @@
+C:\Users\lenovo\Desktop\ds-C#作业\NameSorting\NameSorting\bin\Debug\NameSorting.exe
+C:\Users\lenovo\Desktop\ds-C#作业\NameSorting\NameSorting\bin\Debug\NameSorting.pdb
+C:\Users\lenovo\Desktop\ds-C#作业\NameSorting\NameSorting\obj\x86\Debug\NameSorting.exe
+C:\Users\lenovo\Desktop\ds-C#作业\NameSorting\NameSorting\obj\x86\Debug\NameSorting.pdb
