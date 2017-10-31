@@ -56,16 +56,19 @@ namespace NameSorting
             {
                 Console.WriteLine("Error: The third name was not accepted.");
             }
-            //Array.Sort(name);
+           
+            string temp;
             for (int i = 0; i < w-1; i++)
-			{ string temp;
-			 if (name[i].CompareTo(name[i+1])==1)
             {
-               
-                temp = name[i];
-                name[i] = name[i + 1];
-                name[i + 1] = temp;
-            }
+                for (int j = 0; j < w-i-1; j++)
+                {
+                    if (name[j].CompareTo(name[j+1])==1)
+                    {
+                        temp = name[j];
+                        name[j] = name[j + 1];
+                        name[j + 1] = temp;
+                    }
+                }   
             }
             Console.WriteLine("The names in alphabetical order are: ");
             for (int i = 0; i < w; i++)
