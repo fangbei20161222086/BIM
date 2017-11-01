@@ -1,0 +1,4 @@
+C:\Users\lenovo\Desktop\ds-C#作业\BANK\BANK\bin\Debug\BANK.exe
+C:\Users\lenovo\Desktop\ds-C#作业\BANK\BANK\bin\Debug\BANK.pdb
+C:\Users\lenovo\Desktop\ds-C#作业\BANK\BANK\obj\x86\Debug\BANK.exe
+C:\Users\lenovo\Desktop\ds-C#作业\BANK\BANK\obj\x86\Debug\BANK.pdb
