@@ -9,17 +9,19 @@ namespace BANK
     {
         static void Main(string[] args)
         {
-            double amount;
-            double add;                               
+            BankAccount n1 = new BankAccount();                           
             Console.WriteLine("Welcome to CS110 BANK ");
             Console.Write("What is your bank id? ");
-            string id=Console.ReadLine();
+            string ID=Console.ReadLine();
+            n1.setID(ID);
             Console.Write("Initial deposit into Checking:");
             string de = Console.ReadLine();
-            amount = Convert.ToDouble(de);
+            double che = Convert.ToDouble(de);
+            n1.Checking = che;
             Console.Write("Initial deposit into Saving:");
             string s = Console.ReadLine();
-            add = Convert.ToDouble(s);
+            double add = Convert.ToDouble(s);
+            n1.Saving = add;
             Console.WriteLine("Command Options");
             Console.WriteLine("-----------------------------------");
             Console.WriteLine("a: deposit");
@@ -39,7 +41,7 @@ namespace BANK
                         {
                             Console.WriteLine("Amount to deposit: ");
                             double sav = Convert.ToDouble(Console.ReadLine());
-                            amount += sav;
+                            n1.Checking += sav;
                             Console.WriteLine("You deposited ${0:N} to Checking.", sav);
                         }
                         break;
@@ -48,11 +50,11 @@ namespace BANK
                         {
                             Console.WriteLine("Amount to withdraw: ");
                             double sav = Convert.ToDouble(Console.ReadLine());
-                            amount -= sav;
-                            if (amount < 0)
+                            n1.Checking -= sav;
+                            if (n1.Checking < 0)
                             {
                                 Console.WriteLine("Invalid choice (not sufficient fund)");
-                                amount += sav;
+                                n1.Checking += sav;
                                 break;
                             }
                             else
@@ -61,9 +63,7 @@ namespace BANK
                         }
                     case 'c':
                         {
-                            Console.WriteLine("ID:{0}", id);
-                            Console.WriteLine("Checking Balance: ${0:N}", amount);
-                            Console.WriteLine("Saving Balance: ${0:N}", add);
+                            n1.display();
                             break;
                         }
 
@@ -71,11 +71,10 @@ namespace BANK
                         {
                             Console.WriteLine("What is your bank id? ");
                             string i = Console.ReadLine();
-                            if (i == id)
+                            if (i == n1.getID())
                             {
-                                Console.WriteLine("Here is the balance: ID:{0}", id);
-                                Console.WriteLine("Checking Balance: ${0:N}", amount);
-                                Console.WriteLine("Saving Balance: ${0:N}", add);
+                                Console.WriteLine("Here is the balance: ");
+                                n1.display();
                                 break;
                             }
                             else
@@ -85,9 +84,9 @@ namespace BANK
 
                     case 'q':
                         {
-                            Console.WriteLine("ID:{0}", id);
-                            Console.WriteLine("Checking Balance: ${0:N}", amount);
-                            Console.WriteLine("Saving Balance: ${0:N}", add);
+
+                            n1.addInterest();
+                            n1.display();
                             w = false;
                             break;
                         }
