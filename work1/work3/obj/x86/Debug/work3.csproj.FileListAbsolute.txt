@@ -1,0 +1,4 @@
+C:\Users\lenovo\Desktop\ds-C#作业\work1\work3\bin\Debug\work3.exe
+C:\Users\lenovo\Desktop\ds-C#作业\work1\work3\bin\Debug\work3.pdb
+C:\Users\lenovo\Desktop\ds-C#作业\work1\work3\obj\x86\Debug\work3.exe
+C:\Users\lenovo\Desktop\ds-C#作业\work1\work3\obj\x86\Debug\work3.pdb
